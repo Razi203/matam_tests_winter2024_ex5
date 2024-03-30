@@ -39,7 +39,8 @@ def compare_files_by_suffix(dir_path, suffix_a, suffix_b):
 def main():
     script_dir = os.path.dirname(os.path.realpath(__file__))
     cleanUp.clean()
-    output = open('output.txt', 'w')
+    output_path = os.path.join(script_dir, 'output.txt')
+    output = open(output_path, 'w')
     sys.stdout = output
     print("Test Results")
     count = []
@@ -64,7 +65,7 @@ def main():
     for i in range(1,4):
         path = os.path.join(script_dir, 'caesar_enc' + str(i))
         loadEncryptionSystem(path, 'caesar')
-        Title(f'decrypting with caesar Folder {i} (encrypt = true)', 'caesar', 'out')
+        Title(f'decrypting with caesar Folder {i} (encrypt = false)', 'caesar', 'out')
         count.append(compare_files_by_suffix(path, 'out', 'caesar'))
 
 
