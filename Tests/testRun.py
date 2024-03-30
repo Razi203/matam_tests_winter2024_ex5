@@ -94,7 +94,7 @@ def main():
         print("Make sure your code handles dir_path correctly")
     
     else:
-        if sum([x[0] for x in count]) == 0:
+        if sum([x[0] + x[1] for x in count]) == 0:
             print("PASSED ALL TESTS!!!")
         else:
             for i,x in enumerate(count):
