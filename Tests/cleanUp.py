@@ -12,7 +12,7 @@ def remove_files_by_suffix(dir_path, suffix):
                 print(f"Error deleting {filename}: {e}")
 
 
-def main():
+def clean():
     path = os.path.join('.', 'vigenere')
     remove_files_by_suffix(path, 'enc')
 
@@ -28,4 +28,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    clean()
