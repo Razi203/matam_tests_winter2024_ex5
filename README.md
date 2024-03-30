@@ -20,8 +20,6 @@ Good Luck!
     |__cleanUp.py
     |__testRun.py
     |__ex5.py
-
-    ***MAKE SURE TO BE IN THE TESTS DIRCTORY FOR THE FOLLOWING STEPS!!!***
     ```
 2. Run [testRun.py](testRun.py) using your IDE or using ```python3 testRun.py```
 

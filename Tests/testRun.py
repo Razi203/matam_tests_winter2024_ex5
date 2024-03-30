@@ -37,6 +37,7 @@ def compare_files_by_suffix(dir_path, suffix_a, suffix_b):
 
 
 def main():
+    script_dir = os.path.dirname(os.path.realpath(__file__))
     cleanUp.clean()
     output = open('output.txt', 'w')
     sys.stdout = output
@@ -45,7 +46,7 @@ def main():
 
 
     ######################################### TEST 1
-    path = os.path.join('.', 'vigenere')
+    path = os.path.join(script_dir, 'vigenere')
     loadEncryptionSystem(path, 'vigenere')
     Title('encrypting with vigenere (encrypt = true)', 'enc', 'out', True)
     count.append(compare_files_by_suffix(path, 'out', 'enc'))
@@ -53,7 +54,7 @@ def main():
 
 
     ######################################### TEST 2
-    path = os.path.join('.', 'vigenere_encrypted')
+    path = os.path.join(script_dir, 'vigenere_encrypted')
     loadEncryptionSystem(path, 'vigenere')
     Title('decrypting with vigenere (encrypt = false)', 'vigenere', 'out')
     count.append(compare_files_by_suffix(path, 'out', 'vigenere'))
@@ -61,7 +62,7 @@ def main():
 
     ######################################### TEST 3,4,5
     for i in range(1,4):
-        path = os.path.join('.', 'caesar_enc' + str(i))
+        path = os.path.join(script_dir, 'caesar_enc' + str(i))
         loadEncryptionSystem(path, 'caesar')
         Title(f'decrypting with caesar Folder {i} (encrypt = true)', 'caesar', 'out')
         count.append(compare_files_by_suffix(path, 'out', 'caesar'))
@@ -70,15 +71,15 @@ def main():
 
 
     ######################################### TEST 6
-    path = os.path.join('.', 'caesar')
+    path = os.path.join(script_dir, 'caesar')
     values = [-18,9,-8,20]
     for i in range(1,5):
         dict_c = {"type": "Caesar",
         "encrypt": "True",
         "key": values[i-1]}
-        with open(os.path.join('caesar', 'config.json'), 'w') as f:
+        with open(os.path.join(script_dir, 'caesar', 'config.json'), 'w') as f:
             json.dump(dict_c, f, indent=4)
-        # loadEncryptionSystem('caesar', 'c' + str(i))
+        loadEncryptionSystem(path, 'c' + str(i))
     Title(f'encrypting with caesar (encrypt = true)', 'enc', 'out')
     count.append(compare_files_by_suffix(path, 'out', 'enc'))
 

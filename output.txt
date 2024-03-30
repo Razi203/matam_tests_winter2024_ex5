@@ -1,0 +1,93 @@
+Test Results
+
+____________________________________________________________________________________________________
+Results of Testing encrypting with vigenere (encrypt = true)
+
+Your files end with <filename>.enc
+Correct files end with <filename>.out
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________
+Results of Testing decrypting with vigenere (encrypt = false)
+
+Your files end with <filename>.vigenere
+Correct files end with <filename>.out
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________
+Results of Testing decrypting with caesar Folder 1 (encrypt = true)
+
+Your files end with <filename>.caesar
+Correct files end with <filename>.out
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________
+Results of Testing decrypting with caesar Folder 2 (encrypt = true)
+
+Your files end with <filename>.caesar
+Correct files end with <filename>.out
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________
+Results of Testing decrypting with caesar Folder 3 (encrypt = true)
+
+Your files end with <filename>.caesar
+Correct files end with <filename>.out
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________
+Results of Testing encrypting with caesar (encrypt = true)
+
+Your files end with <filename>.enc
+Correct files end with <filename>.out
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
