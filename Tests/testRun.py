@@ -22,7 +22,7 @@ def compare_files_by_suffix(dir_path, suffix_a, suffix_b):
         if len(filenames) == 2:
             global fileOutput
             fileOutput = True
-            with open(filenames[0], 'rb') as file_a, open(filenames[1], 'rb') as file_b:
+            with open(filenames[0], 'r') as file_a, open(filenames[1], 'r') as file_b:
                 if file_a.read() == file_b.read():
                     pass
                     #print(f"Files for '{group_key:4}' are identical.")     #   <---- uncomment if you want
