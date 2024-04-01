@@ -36,6 +36,11 @@ ___
 **~Clean up**: if you want to remove your outputs from the folders, use the 'cleanUp.py' script provided. 
 can be used by IDE or ```python3 cleanUp.py```
 
+## Random Test Generator
+New Update: Added [randomTests.py](Tests/randomTests.py) which generates a custom amount of tests (1000 by default) that generate random keys (Random lists for Vigenere and random shifts for Caesar) and validates whether decrypting an encryption returns the original string or not!
+
+**TO RUN:-** simply run `randomTests.py`, make sure your `ex5.py` is in the same directory.
+
 
 ## Tests Explanation
 The supplied tests **ONLY** test the *loadEncryptionSystem(...)* function.  
