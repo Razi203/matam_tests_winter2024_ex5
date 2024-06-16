@@ -1,4 +1,12 @@
 # matam_tests_winter2024_ex5
+
+***MAKE SURE TO CHECK IN YOUR LOOPS THAT YOU ARE NOT READING A FOLDER BUT A FILE***
+```
+if os.path.isfile(file_path):
+...
+...
+```
+
 ## Your Friendly Guide For Testing
 
 All of the tests were randomly generated!   
